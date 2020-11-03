@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="prg5css.css"?>
+student{
+display:block; margin-top:10px; 
+}
+usn{
+display:block; margin-left:10px; color:Red;
+}
+name{
+display:block; margin-left:20px; color:Red;
+}
+college{
+display:block; margin-left:20px; color:Black;
+}
+branch{
+display:block; margin-left:20px; color:Black;
+}
+year{
+display:block; margin-left:20px; color:Black;
+}
+email{
+display:block; margin-left:20px; color:Black;
+} 
+}
+<students>
+<student1>
+        <usn>4VV17CS110</usn>
+		<name>Vaibhavi</name>
+		<clg>vvce</clg>
+		<branch>cse</branch>
+		<year>2017</year>
+		<email>vaibhavi@gmail.com</email>
+</student1>
+<student2>
+        <usn>4VV17CS106</usn>
+		<name>Ullasini</name>ullasinismys@gmail.com
+		<clg>gsss</clg>
+		<branch>cse</branch>
+		<year>2017</year>
+		<email>ullasinismys@gmail.com</email>
+</student2>
+<student3>
+        <usn>4VV17CS094</usn>
+		<name>vibha</name>
+		<clg>jce</clg>
+		<branch>cse</branch>
+		<year>2018</year>
+		<email>vibha@gmail.com</email>
+</student3>
+</students>

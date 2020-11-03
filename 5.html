@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Program 4</title>
+    </head>
+    <body>
+        <input type="text" id ="str" placeholder="Enter string/Number">
+        <input type="submit" onclick="find();"name="sub" value="submit">
+        <div id="result"></div>
+        <script>
+            function find(){
+                var str=document.getElementById("str").value;
+                if(Number.isInteger(parseInt(str)))
+                {
+                    var num=parseInt(str);
+                    var rev=0,rem=0;
+                    while(num>0){
+                        rem=parseInt(num%10);
+                        rev=rev*10+rem;
+                        num=parseInt(num/10);
+                    }
+                    document.getElementById("result").innerHTML="<P>Reverse is : "+rev+"</p>";
+                
+                }
+                else
+                {
+                    for(var i=0;i<str.length;i++)
+                    {
+                        if(str.charAt(i)=='a'|| str.charAt(i)=='e' || str.charAt(i)=='i'|| str.charAt(i)=='o'|| str.charAt(i)=='u'||
+                        str.charAt(i)=='A'|| str.charAt(i)=='E'|| str.charAt(i)=='I'||str.charAt(i)=='O'|| str.charAt(i)=='U')
+                        {
+                            var pos=i+1;
+                            var text="Position of left most vowel "+str.charAt(i)+" "+pos;
+                            document.getElementById("result").innerHTML=text;
+                            exit;
+                        }
+                    }
+                    var text="No vowel is in the string ";
+                    document.getElementById("result").innerHTML=text;
+                }
+            }
+        </script>
+    </body>
+</html>
